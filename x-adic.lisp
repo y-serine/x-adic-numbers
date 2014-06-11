@@ -1,6 +1,6 @@
 ;; it works only when "num" is larger than 1.
 (defun x-adic (num base)
-  (x-adic-down (mod (mod num base) 1) base (x-adic-up num  base "." ))
+  (x-adic-down (* (mod (mod num base) 1) base) base (x-adic-up num  base "." ))
   )
 
 
